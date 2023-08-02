@@ -17,3 +17,6 @@ Display current directory contents, including hidden files (starting with .)with
 Display current directory contents: Long format with user and group IDs displayed numerically
  And hidden files (starting with .)
 
+-Script 7:
+Create a script that creates a directory in another one
+
