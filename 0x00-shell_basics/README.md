@@ -9,3 +9,6 @@ script that changes the working directory to the user’s home directory
 
 -Script 4:
 Display current directory contents in a long format
+
+-Script 5:
+Display current directory contents, including hidden files (starting with .)with the long format
