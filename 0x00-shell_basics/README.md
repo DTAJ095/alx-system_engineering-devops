@@ -6,3 +6,6 @@ display the contents list of your current directory
 
 -Script 3:
 script that changes the working directory to the user’s home directory
+
+-Script 4:
+Display current directory contents in a long format
