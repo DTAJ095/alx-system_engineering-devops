@@ -20,3 +20,6 @@ Display current directory contents: Long format with user and group IDs displaye
 -Script 7:
 Create a script that creates a directory in another one
 
+-Script 8:
+move a file from a directory to another 
+
