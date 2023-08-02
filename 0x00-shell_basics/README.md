@@ -12,3 +12,8 @@ Display current directory contents in a long format
 
 -Script 5:
 Display current directory contents, including hidden files (starting with .)with the long format
+
+-Script 6:
+Display current directory contents: Long format with user and group IDs displayed numerically
+ And hidden files (starting with .)
+
