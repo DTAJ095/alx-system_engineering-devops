@@ -11,3 +11,4 @@ Script 8: Write a script that sets the permission to the file hello as follows:
     Group: no permission at all
     Other users: all the permissions
 Script 9: Write a script that sets the mode of the file hello to this
+Script 10: Write a script that sets the mode of the file hello the same as olleh’s mode.
