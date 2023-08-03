@@ -27,5 +27,8 @@ move a file from a directory to another
 delete a file from a directory
 
 -Script 9:
-Delete a directory from another directory. 
+Delete a directory from another directory.
+
+-Script 10:
+Change a working directory to the previous one   
 
