@@ -21,5 +21,8 @@ Display current directory contents: Long format with user and group IDs displaye
 Create a script that creates a directory in another one
 
 -Script 8:
-move a file from a directory to another 
+move a file from a directory to another
+
+-Script 9:
+delete a file from a directory 
 
