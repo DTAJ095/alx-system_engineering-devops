@@ -30,5 +30,8 @@ delete a file from a directory
 Delete a directory from another directory.
 
 -Script 10:
-Change a working directory to the previous one   
+Change a working directory to the previous one
+
+-Script 11:
+List all files in the current directory and the aprent of the working directory and the /boot directory   
 
