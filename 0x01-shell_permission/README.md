@@ -1,2 +1,2 @@
 -Script 0:
-Create a script that switches the current user to the user betty. /n
+Create a script that switches the current user to the user betty. echo "/n"
