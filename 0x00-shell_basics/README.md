@@ -33,5 +33,8 @@ Delete a directory from another directory.
 Change a working directory to the previous one
 
 -Script 11:
-List all files in the current directory and the aprent of the working directory and the /boot directory   
+List all files in the current directory and the aprent of the working directory and the /boot directory
+
+-Script 12:
+print the type of the file named iamafile    
 
