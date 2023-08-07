@@ -21,3 +21,5 @@ Script 9: Write a script that duplicates the last line of the file iacta
 Script 10: Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
 Script 11: Write a script that counts the number of directories and sub-directories in the current directory.
+
+Script 12: Create a script that displays the 10 newest files in the current directory.
