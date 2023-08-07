@@ -37,3 +37,5 @@ Script 17: Display all the lines in the file /etc/passwd that do not contain the
 Script 18: Display all lines of the file /etc/ssh/sshd_config starting with a letter.
 
 Script 19: Replace all characters A and c from input to Z and e respectively.
+
+Script 20: Create a script that removes all letters c and C from input.
