@@ -39,3 +39,5 @@ Script 18: Display all lines of the file /etc/ssh/sshd_config starting with a le
 Script 19: Replace all characters A and c from input to Z and e respectively.
 
 Script 20: Create a script that removes all letters c and C from input.
+
+Script 21: Write a script that reverse its input.
