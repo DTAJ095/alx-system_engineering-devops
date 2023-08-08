@@ -13,3 +13,5 @@ Script 5: Create a script that lists all local variables and environment variabl
 Script 6: Create a script that creates a new local variable.
 
 Script 7: Create a script that creates a new global variable.
+
+Script 8: Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
