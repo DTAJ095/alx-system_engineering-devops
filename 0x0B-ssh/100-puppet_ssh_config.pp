@@ -1,15 +1,17 @@
 # Setting up a client config file
 
-file_line { 'Turn of password auth':
-ensure  => present,
+file { '/etc/ssh/ssh_config':
+ensure => present,
+}
+
+file_line { 'Turn off password auth':
 path    => '/etc/ssh/ssh_config',
-line    => '  PasswordAuthentication no',
-replace => true,
+line    => 'PasswordAuthentication no',
+match   => '^#PasswordAuthentication',
 }
 
 file_line { 'Declare identity file':
-ensure  => present,
 path    => '/etc/ssh/ssh_config',
 line    => 'IdentityFile ~/.ssh/school',
-repalce => true,
+match   => '^#IdentityFile',
 }
