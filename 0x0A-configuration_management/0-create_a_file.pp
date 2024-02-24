@@ -1,3 +1,4 @@
+# Create file using Puppet
 file { '/tmp/school':
 content => 'I love Puppet',
 group   => 'www-data',
