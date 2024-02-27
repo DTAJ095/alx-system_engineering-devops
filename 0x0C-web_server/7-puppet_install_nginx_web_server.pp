@@ -1,0 +1,24 @@
+# Script to install and configure nginx web server
+
+package { 'nginx':
+  ensure => installed,
+  name   => 'nginx',
+}
+
+file { '/var/www/html/index.html':
+  content => 'Hello World!',
+  path    => '/var/www/html/index.html',
+}
+
+file_line { 'title':
+  ensure   => present,
+  path     => '/ect/nginx/sites-available/default',
+  after    => 'server_name_;',
+  line     => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
+  multiple => true,
+}
+
+service { 'nginx':
+  ensure  => running,
+  require => Package['nginx'],
+}
