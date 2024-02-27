@@ -9,7 +9,7 @@ then
     USERNAME="${3}"
     PATH_TO_SSH_KEY="${4}"
 
-    scp -o StrictHostKeyChecking -i "${PATH_TO_SSH_KEY}" "${PATH_TO_FILE}" "${USERNAME}"@"${IP}":~/
+    scp -o StrictHostKeyChecking -i "${PATH_TO_FILE}" "${USERNAME}"@"${IP}" "${PATH_TO_SSH_KEY}":~/
 else
     echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 fi
