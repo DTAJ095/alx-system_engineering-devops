@@ -11,7 +11,7 @@ sudo apt-get install -y nginx
 echo "Hello Wolrd!" | sudo tee /var/www/html/index.html
 
 # Performing permanent redirection
-new_str="server_name _;\n\trewrite ^\/redirect_me https://github.com/DTAJ095/alx-system_engineering-devops permanent;"
+new_str="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/DTAJ095 permanent;"
 sudo sed -i "s/server_name _;/$new_str/" /etc/nginx/sites-enabled/default
 
 # Creating a 404 Error page
