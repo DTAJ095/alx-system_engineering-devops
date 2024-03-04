@@ -1,24 +1,29 @@
 #!/usr/bin/env bash
 # Install nginx web server
 
-sudo apt-get update
+#!/usr/bin/env bash
+# Script that configures a brand new Ubuntu machine
+
+# Updating packages before installation
+sudo apt-get update && sudo apt-get upgrade
+
+# Installing nginx server
 sudo apt-get install -y nginx
-sudo service nginx start
-mkdir /etc/nginx/html
-echo "Hello Wolrd!" > /etc/nginx/html/index.html
-echo "Ceci n'est pas une page" > /etc/nginx/html/404.html 
-echo "server {
-     listen 80;
-     listen [::]:80 default_server;
-     root /etc/nginx/html;
-     index index.html;
-     location /redirect_me {
-     	      return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-     }
-     error_page 404 /404.html
-     location = 404.html{
-     	      root /etc/nginx/html;
-	      internal;
-     }
-}" > /etc/nginx/sites-available/default
+
+# Creating index.hmtl
+echo "Hello Wolrd!" | sudo tee /var/www/html/index.html
+
+# Performing permanent redirection
+new_str="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/DTAJ095 permanent;"
+sudo sed -i "s/server_name _;/$new_str/" /etc/nginx/sites-enabled/default
+
+# Creating a 404 Error page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+new_str="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+sudo sed -i "s/listen 80 default_server;/$new_str/" /etc/nginx/sites-enable/default
+
+# Testing configuration errors
+sudo nginx -t
+
+# Restarting nginx server
 sudo service nginx restart
