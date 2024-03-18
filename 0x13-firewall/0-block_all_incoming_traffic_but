@@ -1,0 +1,21 @@
+# Install ufw on server
+
+# Updating and upgrading packets
+sudo apt update && sudo apt upgrade
+
+# Checking if ufw is install
+which ufw
+
+# Installing ufw
+sudo apt-get install ufw
+
+# Checking status
+sudo ufw status verbose
+
+# Configuring ufw
+sudo ufw allow 22
+sudo ufw allow 443/HTTPS SSL 
+sudo ufw allow 80/HTTP
+
+# Enabling ufw
+sudo ufw enable
