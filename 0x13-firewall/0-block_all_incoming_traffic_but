@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install ufw on server
 
 # Updating and upgrading packets
@@ -16,6 +18,7 @@ sudo ufw status verbose
 sudo ufw allow 22
 sudo ufw allow 443/HTTPS SSL 
 sudo ufw allow 80/HTTP
+sudo ufw allow OpenSSH
 
 # Enabling ufw
 sudo ufw enable
