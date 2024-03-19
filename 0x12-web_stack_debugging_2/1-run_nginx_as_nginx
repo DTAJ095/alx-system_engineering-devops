@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Fixe Nginx so that it should be runnig as nginx user
 sudo -u nginx service nginx stop
 pkill apache2
