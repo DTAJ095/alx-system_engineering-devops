@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that returns the root user
+if [ $# = 1 ]
+then
+	sudo -H -u "$1" bash -c 'whoami'
+elif [ $# = 0 ]
+then
+	whoami
+fi
