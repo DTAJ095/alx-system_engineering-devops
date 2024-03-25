@@ -13,10 +13,11 @@ if __name__ == '__main__':
     user_id = sys.argv[1]
     user = requests.get(url + 'users/{}'.format(user_id)).json()
     todos = requests.get(url + 'todos?user_id={}'.format(user_id)).json()
+    name = user.get('name')
     completed_tasks = []
     for task in todos:
-        if task.get('completed') is True:
+        if task.get('completed'):
             completed_tasks.append(task.get('title'))
-    print('Employee {} is done with tsks({}/{}):'
-          .format(user.get('name'), len(completed_tasks), len(todos)))
-    print('\n'.join('\t {}'.format(task) for task in completed_tasks))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(name, len(completed_tasks), len(todos)))
+    print("\n".join("\t {}".format(task) for task in completed_tasks))
