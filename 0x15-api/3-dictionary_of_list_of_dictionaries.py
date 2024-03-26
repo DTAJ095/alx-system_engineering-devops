@@ -13,8 +13,8 @@ if __name__ == '__main__':
     users = requests.get(endpoint + "users").json()
     for user in users:
         records = []
-        todos = requests.get(endpoint + "todos?userId={}".
-                            format(user.get('id'))).json()
+        todos = requests.get(endpoint + "todos?userId={}"
+                             .format(user.get('id'))).json()
         for task in todos:
             records.append({
                 "username": user.get('username'),
